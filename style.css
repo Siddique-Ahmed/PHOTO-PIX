@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ########## color ######### */
+:root {
+    --primary: indianred;
+    --secondary: rgba(15, 10, 29, 0.849);
+    --light: #2f3640;
+}
+
+/* ###################### HEADER STYLING ###################### */
+
+header {
+    width: 100%;
+}
+
+.nav1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px grey;
+    text-align: center;
+}
+
+.nav1 .left {
+    flex-basis: 50%;
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.nav1 .left a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0px 5px;
+}
+
+.nav1 .right {
+    flex-basis: 50%;
+    letter-spacing: 0.2rem;
+}
+
+.nav1 .right i {
+    font-size: 2rem;
+    padding: 8px;
+    cursor: pointer;
+    background: var(--primary);
+    color: #fff;
+    margin: 0px 15px;
+    transition: 0.7s ease-in-out;
+}
+
+.right i:hover {
+    transform: rotate(360deg);
+}
+
+/* ############### Nav1 End ################ */
+
+/* ############### Nav2 Start ################# */
+
+.nav2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav2 .nav2-left,
+.nav2 .nav2-center,
+.nav2 .nav2-right {
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.nav2 .nav2-left i {
+    margin-left: 15px;
+    font-size: 2rem;
+}
+
+.nav2 .nav2-left .text {
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.nav2 .nav2-center h1 {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.nav2 .nav2-center span {
+    color: var(--secondary);
+}
+
+.nav2 .nav2-center p {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.nav2 .nav2-right i {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0 5px;
+}
+
+.nav2 .nav2-right .text {
+    font-size: 1.3rem;
+    color: grey;
+}
+
+/* ########### nav3 styling ################ */
+
+.nav3 {
+    width: 100%;
+    height: 70px;
+    line-height: 7rem;
+}
+
+.nav3 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav3 ul li {
+    display: inline-block;
+    width: 15rem;
+    position: relative;
+    z-index: 990;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: #000;
+    font-weight: 500;
+    display: block;
+    transition: 0.4s ease-in-out;
+}
+
+.nav3 ul li a:hover {
+    color: var(--primary);
+}
+
+.nav3 ul li i {
+    color: var(--primary);
+    margin: 0px 5px;
+}
+
+.nav3 ul ul {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+
+.nav3 ul ul li {
+    background: #fff;
+    border-bottom: 1px solid indianred;
+}
+
+.nav3 ul ul {
+    display: none;
+}
+
+.nav3 ul li:hover>ul {
+    display: block;
+}
+
+/* ################# featured section styling ############### */
+.featured {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to right, rgba(0, 0, 0.1) 20%, rgba(255, 255, 255, 0.2)), url('./images/g1.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.featured-text {
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    font-family: "Akaya Kanadaka", system-ui;
+}
+
+.featured-text button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--secondary);
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* ################## card section styling ################### */
+
+.cards-section {
+    padding: 50px 100px;
+}
+
+.product-intro {
+    text-align: center;
+}
+
+.product-intro h1 {
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.product-intro h1 span {
+    color: var(--secondary);
+}
+
+.product-intro p {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: grey;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+.card-container .card {
+    flex-basis: 20%;
+    padding: 1rem;
+    transition: transform;
+    position: relative;
+}
+
+.card-container .card img {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.card h1 {
+    font-size: 1.7rem;
+}
+
+.card p {
+    font-size: 1.7rem;
+}
+
+.card i {
+    color: goldenrod;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.card button {
+    color: #fff;
+    background: var(--secondary);
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.card:hover img,
+.card:hover h1 {
+    width: 80%;
+    color: var(--primary);
+}
+
+.card::before {
+    content: '20% off';
+    width: 25%;
+    height: 25px;
+    padding: 2px 5px;
+    font-size: 1.7rem;
+    background: var(--primary);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-20deg);
+    line-height: 25px;
+}
+
+/* ################ slider section ##################### */
+
+.slider {
+    padding: 50px 100px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.slider .swiper {
+    width: 100%;
+    padding: 50px;
+}
+
+.slider .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.slider .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* ################ footer section ################## */
+
+footer{
+    background: var(--secondary);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+footer div{
+    flex-basis: 30%;
+    font-size: 1.8rem;
+}
+footer h1{
+    letter-spacing: 1.2rem;
+    font-weight: 600;
+}
+footer h1 span{
+    color: indianred;
+}
+footer div i{
+    margin: 5px 5px;
+    cursor: pointer;
+}
+footer div p{
+    font-size: 1.9rem;
+}
+
+#side-nav{
+    display: none;
+}
+#hamburger-menu{
+    display: none;
+}
+
+/* ############# media query ################## */
+
+@media (max-width: 769px){
+    
+    #side-nav{
+        display: block;
+    }
+    #hamburger-menu{
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0%,50%);
+        background: var(--primary);
+        color: #fff;
+        padding: 20px 10px;
+        z-index: 99;
+        font-size: 4rem;
+        animation: hamburger 5s ease-in-out infinite;
+    }
+
+    @keyframes hamburger {
+        0%{
+            background: var(--secondary);
+        }
+        100%{
+            background: var(--primary);
+        }
+    }
+    
+    .nav1{
+        background: #fff;
+        z-index: 4;
+        position: relative;
+    }
+    .nav1 .right i{
+        font-size: 1.5rem;
+        margin: 0px 5px;
+    }
+    .nav2{
+        width: 100%;
+        height: 80px;
+    }
+    .nav2 .nav2-left i{
+        margin-left: 0px;
+    }
+    .nav2 .nav2-center h1{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    .nav2 .nav2-center p{
+        font-size: 1rem;
+    }
+    .nav3{
+        display: none;
+    }
+
+    #side-nav{
+        width: 0px;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2909;
+        background: var(--light);
+        padding-top: 1rem;
+        display: block;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+    
+    #side-nav ul {
+        list-style-type: none;
+    }
+    
+    #side-nav ul li {
+        display: block;
+        width: 20rem;
+        position: relative;
+        z-index: 990;
+        margin: 10px 20px;
+    }
+    
+    #side-nav ul li a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 500;
+        display: block;
+        transition: 0.4s ease-in-out;
+        padding: 10px 20px;
+    }
+    
+    #side-nav ul li a:hover {
+        color: var(--primary);
+    }
+    
+    #side-nav ul li i {
+        color: #fff;
+        margin: 0px 5px;
+    }
+    
+    #side-nav ul ul {
+        position: absolute;
+        top: 30px;
+        left: -10px;
+    }
+    
+    #side-nav ul ul li {
+        border-bottom: 1px solid #fff;
+    }
+    
+    #side-nav ul ul {
+        display: none;
+    }
+    
+    #side-nav ul li:hover>ul {
+        display: block;
+    }
+
+    .featured{
+        background-attachment: fixed;
+    }
+    .cards-section{
+        padding: 0px 50px;
+    }
+    .card-container{
+        margin: 2rem 0;
+    }
+    .card-container .card{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .slider{
+        padding: 20px 50px;
+    }
+    .slider .swiper-slide{
+        width: 350px;
+        height: 350px;
+    }
+    footer div{
+        flex-basis: 40%;
+        margin: 10px 0;
+    }
+    footer div h1{
+        font-size: 2rem;
+    }
+}
+/* ############# for mobile device ############### */
+
+@media (max-width: 450px){
+    html{
+        font-size: 8px;
+    }
+    .nav1{
+        flex-direction: column;
+    }
+    .nav1 .left{
+        flex-basis: 20%;
+    }
+    .nav1 .right{
+        flex-basis: 20%;
+    }
+    .nav2{
+        flex-direction: column;
+        margin: 5px 0;
+    }
+    #hamburger-menu{
+        position: absolute;
+        top: 28%;
+    }
+    .featured-text h2{
+        font-size: 4.5rem;
+    }
+    .slider .swiper-slide{
+        width: 200px;
+        height: 200px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer div{
+        border-bottom: 1px solid #fff;
+        padding: 5px 0;
+    }
+}
